@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cek Status Pesanan 🔍</title>
+
+<link rel="stylesheet" href="status.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Cek Status Pesanan</h1>
+
+    <input
+        type="text"
+        id="orderCode"
+        placeholder="Masukkan Kode Pesanan">
+
+    <button onclick="checkOrder()">
+        Cek Status
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-database-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+<script src="status.js"></script>
+
+</body>
+</html>
